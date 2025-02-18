@@ -1,1 +1,203 @@
-hello
+<!-- page with form to demonstrate captcha video -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha</title>
+    <style>
+        body {
+            background-color: #9f9f9f;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+
+
+        <style>
+.captcha__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+    max-width: 100vw;
+    width: 20em;
+    height: 1em;
+    border-radius: 1000px;
+    position: relative;
+    user-select: none;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5), 0 0 0.5em rgba(0, 0, 0, 0.5) inset;
+
+  & * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        border-style: none;
+    }
+
+    & .captcha__input__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        position: relative;
+
+        & .captcha__input__img {
+            object-fit: cover;
+        }
+
+        & .captcha__video {
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95vw;
+            height: 95vh;
+            max-width: 95vw;
+            max-height: 95vh;
+            object-fit: contain;
+            border: none;
+        }
+
+        &:has(.captcha__input__img__wrapper__button:focus)  {
+            & .captcha__video {
+                display: block;
+                z-index: 1;
+            }
+
+            &::after {
+                content: "Click anywhere to close the image.";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #141414;
+                color: white;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 25px;
+            }
+        }
+
+        & .captcha__input__img__wrapper__button {
+            height: 2.5em;
+            padding: 0.6em;
+            aspect-ratio: 1;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+            border-radius: 25px;
+            transition: all 0.25s ease-in-out;
+            background-color: #8091ee;
+            box-shadow: 0 0 0.5em rgba(7, 30, 158, 0.5);
+            border-style: none;
+        
+        &:hover {
+            opacity: 0.8;
+            border-color: rgba(142, 134, 255, 0.5);
+        }
+
+        & .captcha__input__img {
+            object-fit: cover;
+            border-radius: inherit;
+        }
+        }
+
+        & .captcha__input {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            color: rgb(9, 9, 9);
+            text-align: center;
+            font-size: 1em;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            outline: none;
+        }
+
+        & .captcha__check {
+            height: 2.5em;
+            width: 4em;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 25px;
+            transition: all 0.25s ease-in-out;
+            background-color: #8091ee;
+            box-shadow: 0 0 0.5em rgba(128, 145, 238, 0.5);
+            border-style: solid;
+            border-width: 1px;
+            border-color: transparent;
+
+            &:hover {
+                opacity: 0.8;
+                border-color: rgba(142, 134, 255, 0.5);
+            }
+
+            & .captcha__check__img {
+                height: 100%;
+                object-fit: cover;
+                border-radius: inherit;
+            }
+        }
+
+    }
+}
+
+.captcha__wrapper:has(.captcha__input:invalid) .captcha__check {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+        </style>
+        <div class="captcha__wrapper" draggable="false">
+            <div class="captcha__input__wrapper">
+                <div class="captcha__input__img__wrapper">
+                    <video src="captcha.webm" class="captcha__video" nocontrols autoplay loop muted playsinline></video>
+                </div>
+                <button class="captcha__input__img__wrapper__button" type="button" role="button" tabindex="-1">
+                    <img src="mystery.svg" alt="View Captcha" class="captcha__input__img" draggable="false">
+                </button>
+                <input type="text" class="captcha__input" placeholder="Captcha" name="captcha" value="" autocorrect="off" autocomplete="off" spellcheck="false" pattern="[a-zA-Z0-9]{5,8}" required>
+                <button class="captcha__check" type="button" role="button">
+                    <img src="check.svg" class="captcha__check__img" alt="Check" draggable="false">
+                </button>
+            </div>
+        </div>
+
+
+    </form>
+</body>
+</html>
