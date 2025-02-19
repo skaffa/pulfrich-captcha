@@ -4,4 +4,4 @@ This script generates CAPTCHAs using the pulfrich effect, making it visually imp
 
 In the 'captchas' folder are some examples
 
-Note: I used AI to help me bringthis idea to life
+Note: I used AI to help me bring this idea to life
