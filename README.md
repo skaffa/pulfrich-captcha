@@ -40,7 +40,7 @@ The generated video will be saved in the `captchas/` directory.
 
 ## Example Output
 A sample CAPTCHA video will be generated in `.webm` format and can be viewed in any modern browser.   
-skaffa.github.io/pulfrich-captcha/
+[Example](skaffa.github.io/pulfrich-captcha/)
 
 ## Configuration
 Modify the `CONFIG` dictionary in the script to adjust settings like image size, font size, character length, and scrolling speed.
