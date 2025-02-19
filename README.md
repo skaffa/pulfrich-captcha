@@ -3,3 +3,5 @@ This script generates CAPTCHAs using the pulfrich effect, making it visually imp
 [https://skaffa.github.io/pulfrich-captcha/](https://skaffa.github.io/pulfrich-captcha/)
 
 In the 'captchas' folder are some examples
+
+Note: I used AI to help me realize this idea
