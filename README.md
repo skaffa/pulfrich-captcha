@@ -8,4 +8,4 @@ I consider this a Proof of Concept
 
 In the 'captchas' folder are some examples
 
-Note: I used AI to help me bring this idea to life
+Note: This project is mostly, if not all, made by AI. ChatGPT and Deepseek were used for this.
