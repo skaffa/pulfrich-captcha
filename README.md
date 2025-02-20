@@ -8,4 +8,5 @@ I consider this a Proof of Concept
 
 In the 'captchas' folder are some examples
 
-Note: This project is mostly, if not all, made by AI. ChatGPT and Deepseek were used for this.
+Note: This project is mostly made by AI. ChatGPT and Deepseek were used for this.
+If for some reason anyone decides to contribute to this repo, I recommend using AI generated code, to not waste your time.
