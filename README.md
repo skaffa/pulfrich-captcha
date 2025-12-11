@@ -13,3 +13,4 @@ If for some reason anyone decides to contribute to this repo, I recommend using 
 
 > [!IMPORTANT]  
 > Unfortunately, the current implementation still leaks enough signal for the correct CAPTCHA code to be programmatically recovered. Using an optical-flow–based analysis, attackers can extract motion differences that reveal the underlying characters.
+> https://github.com/skaffa/pulfrich-captcha/blob/main/flow_attack.py
