@@ -12,5 +12,5 @@ Note: This project is mostly made by AI. ChatGPT and Deepseek were used for this
 If for some reason anyone decides to contribute to this repo, I recommend using AI generated code, to not waste your time. Otherwise, fork or clone this repo and do whatever with it.
 
 > [!IMPORTANT]  
-> Unfortunately, the current implementation still leaks enough signal for the correct CAPTCHA code to be programmatically recovered. Using an optical-flow–based analysis, attackers can extract motion differences that reveal the underlying characters.
+> Unfortunately, the current implementation still leaks enough signal for the correct CAPTCHA code to be programmatically recovered. Using an optical-flow–based analysis, attackers can extract motion differences that reveal the underlying characters.  
 > https://github.com/skaffa/pulfrich-captcha/blob/main/flow_attack.py
